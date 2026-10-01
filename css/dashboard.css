@@ -1,7 +1,9 @@
 /* Dashboards: compact top bar (logo + profile) and sidebar */
 body.d{background:#eef2ff}
 .dtop{position:fixed;inset:0 0 auto;height:64px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:0 4vw;background:rgba(255,255,255,.85);backdrop-filter:blur(14px);box-shadow:0 4px 18px rgba(47,107,255,.12)}
-.prof{position:relative}.prof>button{border:0;background:#fff;padding:8px 14px;border-radius:99px;font:inherit;font-weight:600;cursor:pointer;box-shadow:0 0 0 2px #d5deff}
+.prof{position:relative}.prof>button{display:flex;align-items:center;gap:8px;border:0;background:#fff;padding:8px 14px;border-radius:99px;font:inherit;font-weight:600;cursor:pointer;box-shadow:0 0 0 2px #d5deff}
+.profile-thumb{width:28px;height:28px;object-fit:cover;border-radius:50%}
+.profile-photo{width:72px;height:72px;object-fit:cover;border-radius:50%;margin-bottom:12px}
 .pm{position:absolute;right:0;top:46px;background:#fff;border-radius:14px;box-shadow:0 12px 30px rgba(15,27,61,.2);padding:8px;min-width:150px}.pm a{display:block;padding:8px 12px;border-radius:8px}.pm a:hover{background:#eef2ff}
 .dash{display:grid;grid-template-columns:230px 1fr;padding-top:64px;min-height:100vh}
 #side{padding:20px 14px;background:#fff;position:sticky;top:64px;height:calc(100vh - 64px);overflow:auto}

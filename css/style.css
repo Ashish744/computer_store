@@ -62,7 +62,7 @@ h2{font-size:clamp(1.7rem,4vw,2.7rem);margin-bottom:28px}
 .flip .f,.flip .k{position:absolute;inset:0;border-radius:22px;padding:22px;backface-visibility:hidden;display:grid;place-content:center;text-align:center;gap:6px}
 .flip .f{background:var(--g);color:#fff;font-size:1.2rem}.flip .k{background:#fff;color:var(--ink);transform:rotateY(180deg);box-shadow:0 12px 36px rgba(47,107,255,.2)}
 .exp{cursor:pointer}.exp .more{max-height:0;overflow:hidden;opacity:0;transition:.5s}.exp.open .more{max-height:220px;opacity:1;margin-top:10px}
-.av{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--g);color:#fff;font-weight:800}
+.av{display:inline-block;width:42px;height:42px;object-fit:cover;vertical-align:middle;border-radius:50%}
 .badge{font-size:.75rem;background:#dcfce7;color:#15803d;padding:2px 8px;border-radius:99px;font-weight:700}
 .mq{overflow:hidden;white-space:nowrap;padding:22px 0;background:var(--g);color:#fff;font-weight:800;font-size:1.6rem}
 .mq div{display:inline-block;animation:mq 22s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
