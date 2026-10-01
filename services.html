@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Services | Stackly Computers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="dk">
+    <div class="bar2" id="prog"></div>
+    <header class="nav" id="nav">
+      <div class="wrap bar">
+        <a class="logo" href="index.html"><img src="assets/logo/logo.webp" alt="Stackly logo"></a>
+        <button class="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav id="menu" aria-label="Main">
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="acts"> <a href="login.html">Login</a> <a class="btn" href="create-account.html">Create Account</a> </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="bgs full" style="--pos:center;background-image:linear-gradient(90deg,rgba(11,20,48,.8),rgba(11,20,48,.15)),url('assets/images/home1.webp'),url('assets/images/bg-build.svg')">
+        <div class="wrap">
+          <div class="box">
+            <span class="tag">Services</span>
+            <h1 class="big-h" data-split>Built, repaired and upgraded by people who love hardware</h1>
+            <p>Custom PCs, laptop care, upgrades and business support, all under one roof.</p>
+            <a class="btn mag" href="#process">How it works</a>
+          </div>
+        </div>
+      </section>
+      <section class="bgs r" style="--pos:right center;background-image:linear-gradient(270deg,rgba(11,20,48,.8),rgba(11,20,48,.15)),url('assets/images/home4.webp'),url('assets/images/bg-workstation.svg')">
+        <div class="wrap">
+          <div class="box">
+            <span class="tag">Custom PC building</span>
+            <h2 class="big-h" style="font-size:clamp(2.2rem,5vw,4rem)" data-split>Built for your performance</h2>
+            <p>Pick your parts or let us recommend them. We assemble, tune and test every system.</p>
+            <a class="btn mag" href="contact.html">Book this service</a>
+          </div>
+        </div>
+      </section>
+      <section class="split  soft">
+        <div class="pic prod" data-clip><img src="assets/images/laptop.svg" alt="Laptop on service bench" loading="lazy"></div>
+        <div class="txt">
+          <span class="tag">Laptop services</span>
+          <h2 class="big-h" style="font-size:clamp(2.2rem,5vw,4rem)" data-split>Fixed fast, cared for properly</h2>
+          <p>Screen and battery replacement, keyboard repair, deep cleaning and SSD or RAM upgrades.</p>
+          <a class="btn mag" href="contact.html">Book this service</a>
+        </div>
+      </section>
+      <section class="stick dark">
+        <div class="wrap">
+          <div class="vis" aria-live="polite">
+            <img src="assets/images/gpu.svg" alt="Featured upgrade">
+            <small>Graphics upgrade</small>
+          </div>
+          <div>
+            <div class="step" data-h="300" data-i="gpu" data-s="Graphics upgrade">
+              <h2>Graphics card</h2>
+              <p>A new GPU is the biggest single jump in gaming performance.</p>
+            </div>
+            <div class="step" data-h="220" data-i="ram" data-s="Memory upgrade">
+              <h2>RAM</h2>
+              <p>Go from 16 GB to 32 GB or more for multitasking and editing.</p>
+            </div>
+            <div class="step" data-h="260" data-i="ssd" data-s="Storage upgrade">
+              <h2>NVMe SSD</h2>
+              <p>Boot in seconds and open big projects instantly.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bgs r" style="--pos:center;background-image:linear-gradient(270deg,rgba(11,20,48,.8),rgba(11,20,48,.15)),url('assets/images/home5.webp'),url('assets/images/bg-repair.svg')">
+        <div class="wrap">
+          <div class="box">
+            <span class="tag">PC repair</span>
+            <h2 class="big-h" style="font-size:clamp(2.2rem,5vw,4rem)" data-split>Back to life in one to three days</h2>
+            <p>We diagnose for free and give a written quote before touching anything.</p>
+            <a class="btn mag" href="contact.html">Book this service</a>
+          </div>
+        </div>
+      </section>
+      <section class="split rev ">
+        <div class="pic " data-clip>
+          <img src="assets/images/home1.webp" data-fb="assets/images/bg-setup.svg" alt="Gaming setup with two monitors" loading="lazy">
+          <span class="float-chip float" style="right:8%;top:12%">165 Hz</span>
+        </div>
+        <div class="txt">
+          <span class="tag">Gaming setup</span>
+          <h2 class="big-h" style="font-size:clamp(2.2rem,5vw,4rem)" data-split>The full desk, done properly</h2>
+          <p>Monitors, peripherals, lighting and cable routing planned around your space.</p>
+          <a class="btn mag" href="contact.html">Book this service</a>
+        </div>
+      </section>
+      <section class="bgs" style="--pos:center;background-image:linear-gradient(90deg,rgba(11,20,48,.8),rgba(11,20,48,.15)),url('assets/images/home3.webp'),url('assets/images/bg-workstation.svg')">
+        <div class="wrap">
+          <div class="box">
+            <span class="tag">Business solutions</span>
+            <h2 class="big-h" style="font-size:clamp(2.2rem,5vw,4rem)" data-split>Workstations and support for teams</h2>
+            <p>Fleet purchasing, installation, backups, networking and a support plan that fits your office.</p>
+            <a class="btn mag" href="contact.html">Book this service</a>
+          </div>
+        </div>
+      </section>
+      <section class="procsec" id="process">
+        <div class="wrap">
+          <h2 data-split>How every job works</h2>
+          <ol class="proc">
+            <li data-r>
+              <b>01</b>
+              <div>
+                <h3>Consultation</h3>
+                <p>Tell us how you use your computer and your budget.</p>
+              </div>
+            </li>
+            <li data-r>
+              <b>02</b>
+              <div>
+                <h3>Diagnosis</h3>
+                <p>We test the current hardware and find bottlenecks.</p>
+              </div>
+            </li>
+            <li data-r>
+              <b>03</b>
+              <div>
+                <h3>Recommendation</h3>
+                <p>You get a clear written quote with options.</p>
+              </div>
+            </li>
+            <li data-r>
+              <b>04</b>
+              <div>
+                <h3>Installation</h3>
+                <p>Our technicians build, repair or upgrade.</p>
+              </div>
+            </li>
+            <li data-r>
+              <b>05</b>
+              <div>
+                <h3>Testing</h3>
+                <p>Stress tests and benchmarks before handover.</p>
+              </div>
+            </li>
+            <li data-r>
+              <b>06</b>
+              <div>
+                <h3>Delivery</h3>
+                <p>Pick up in store or get it delivered and set up.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="bgs mid ctr" style="--pos:center;background-image:linear-gradient(rgba(11,20,48,.3),rgba(11,20,48,.75)),url('assets/images/home2.webp'),url('assets/images/bg-tech.svg')">
+        <div class="wrap">
+          <div class="box">
+            <h2 class="big-h" style="font-size:clamp(2rem,5vw,3.6rem)" data-split>Not sure what you need?</h2>
+            <p style="margin:14px auto">Describe the problem and we will point you in the right direction.</p>
+            <div class="cta" style="justify-content:center">
+              <a class="btn mag" href="contact.html">Talk to us</a>
+              <a class="btn ghost mag" href="services.html">Our services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="wrap">
+          <div class="cols">
+            <div>
+              <a class="logo" href="index.html">
+                <img class="pill" src="assets/logo/logo.webp" alt="Stackly logo" style="height:64px">
+              </a>
+              <p style="margin-top:12px;max-width:320px">Premium PCs, laptops and components for gamers and creators.</p>
+              <div class="soc">
+                <a href="404.html" aria-label="Instagram" title="Instagram">IG</a>
+                <a href="404.html" aria-label="Facebook" title="Facebook">f</a>
+                <a href="404.html" aria-label="YouTube" title="YouTube">▶</a>
+                <a href="404.html" aria-label="X / Twitter" title="X / Twitter">X</a>
+                <a href="404.html" aria-label="LinkedIn" title="LinkedIn">in</a>
+              </div>
+            </div>
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Services</h4>
+              <ul>
+                <li><a href="404.html">PC Building</a></li>
+                <li><a href="404.html">Repairs</a></li>
+                <li><a href="404.html">Upgrades</a></li>
+              </ul>
+              <p style="margin-top:10px;font-size:.85rem">hello@stackly.example<br>+91 80 0000 0000</p>
+            </div>
+            <div>
+              <h4>Newsletter</h4>
+              <form data-validate novalidate data-ok="Subscribed (demo).">
+                <div class="field">
+                  <label for="nl">Email address</label>
+                  <input id="nl" name="nl" type="text" data-v="email" autocomplete="off">
+                  <small class="err" role="alert"></small>
+                </div>
+                <button class="btn" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <details>
+            <summary>Privacy Policy</summary>
+            <p>
+              We only use your details to process orders and support requests, and never sell them. (Sample text — replace with your policy.)
+            </p>
+          </details>
+          <details>
+            <summary>Terms &amp; Conditions</summary>
+            <p>Prices and stock may change. Warranty follows each manufacturer's terms. (Sample text — replace with your terms.)</p>
+          </details>
+        </div>
+        <div class="mq" aria-hidden="true">
+          <div>
+            NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY •
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/animations.js"></script>
+      <script src="js/validation.js"></script>
+    </main>
+  </body>
+</html>

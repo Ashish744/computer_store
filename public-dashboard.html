@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Account | Stackly Computers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+  </head>
+  <body class="d">
+    <header class="dtop">
+      <div class="dleft">
+        <button type="button" class="dburger" id="dburger" aria-label="Toggle menu" aria-controls="side" aria-expanded="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="logo" href="index.html"><img src="assets/logo/logo.webp" alt="Stackly logo"></a>
+      </div>
+      <div class="prof">
+        <button id="pb" aria-haspopup="true" aria-expanded="false">Account ▾</button>
+        <div class="pm" hidden><a href="index.html">View site</a><a href="login.html">Log out</a></div>
+      </div>
+    </header>
+    <div class="scrim" id="scrim"></div>
+    <div class="dash">
+      <aside id="side" aria-label="Account menu">
+        <div class="side-head">
+          <a class="logo" href="index.html"><img src="assets/logo/logo.webp" alt="Stackly logo"></a>
+          <button type="button" class="sclose" aria-label="Close menu">✕</button>
+        </div>
+        <p class="grp">My account</p>
+        <button type="button" data-p="Overview" class="on">Overview</button>
+        <button type="button" data-p="Orders" class="">Orders</button>
+        <button type="button" data-p="Wishlist" class="">Wishlist</button>
+        <p class="grp">Help</p>
+        <button type="button" data-p="Warranty" class="">Warranty</button>
+        <button type="button" data-p="Support" class="">Support</button>
+        <p class="grp">Preferences</p>
+        <button type="button" data-p="Settings" class="">Settings</button>
+      </aside>
+      <main class="dmain">
+        <div id="p-Overview" class="panel on">
+          <h1>Overview</h1>
+          <div class="dban im-u3">
+            <h1>Welcome back, Ashish</h1>
+            <p>Your Stackly X Gaming PC arrives Friday.</p>
+          </div>
+          <div class="kpi">
+            <div>
+              <p>Open orders</p>
+              <b><span data-n="2">0</span></b>
+            </div>
+            <div>
+              <p>Wishlist</p>
+              <b><span data-n="5">0</span></b>
+            </div>
+            <div>
+              <p>Reward points</p>
+              <b><span data-n="1240">0</span></b>
+            </div>
+          </div>
+          <h2>Recently viewed</h2>
+          <div class="pgrid">
+            <div class="pp">
+              <img src="assets/images/pc.svg" alt="Stackly X Gaming PC" loading="lazy">
+              <b>Stackly X Gaming PC</b>
+              <span>$1,899</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/laptop.svg" alt="AeroBook 14" loading="lazy">
+              <b>AeroBook 14</b>
+              <span>$1,249</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/monitor.svg" alt="Vision 27" 165Hz" loading="lazy">
+              <b>Vision 27" 165Hz</b>
+              <span>$329</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/keyboard.svg" alt="Pulse RGB Keyboard" loading="lazy">
+              <b>Pulse RGB Keyboard</b>
+              <span>$119</span>
+            </div>
+          </div>
+          <h2 style="margin-top:28px">Recommended for you</h2>
+          <div class="pgrid">
+            <div class="pp">
+              <img src="assets/images/mouse.svg" alt="Glide Pro Mouse" loading="lazy">
+              <b>Glide Pro Mouse</b>
+              <span>$79</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/gpu.svg" alt="RTX Core GPU" loading="lazy">
+              <b>RTX Core GPU</b>
+              <span>$799</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/ssd.svg" alt="NVMe SSD 2TB" loading="lazy">
+              <b>NVMe SSD 2TB</b>
+              <span>$149</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/ram.svg" alt="DDR5 32GB Kit" loading="lazy">
+              <b>DDR5 32GB Kit</b>
+              <span>$119</span>
+            </div>
+          </div>
+          <div class="dban im-u4" style="margin-top:28px">
+            <h2>10% off accessories</h2>
+            <p>Use code SETUP10 at checkout (demo).</p>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Track your order</h3>
+              <p><b>#1042 · Stackly X Gaming PC</b></p>
+              <ol class="track">
+                <li class="done">Placed</li>
+                <li class="done">Packed</li>
+                <li class="done">Shipped</li>
+                <li class="">Out for delivery</li>
+                <li class="">Delivered</li>
+              </ol>
+              <p style="margin-top:12px;color:var(--mut)">Arriving Friday, Sep 27.</p>
+            </div>
+            <div class="card">
+              <h3>Rewards</h3>
+              <p><b>1,240 points</b> · Silver member</p>
+              <div class="prog"><i style="width:62%;"></i></div>
+              <p style="color:var(--mut)">760 points to Gold.</p>
+            </div>
+          </div>
+          <h2 style="margin-top:28px">Saved products</h2>
+          <div class="pgrid">
+            <div class="pp">
+              <img src="assets/images/gpu.svg" alt="RTX Core GPU" loading="lazy">
+              <b>RTX Core GPU</b>
+              <span>$799</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/ssd.svg" alt="NVMe SSD 2TB" loading="lazy">
+              <b>NVMe SSD 2TB</b>
+              <span>$149</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/ram.svg" alt="DDR5 32GB Kit" loading="lazy">
+              <b>DDR5 32GB Kit</b>
+              <span>$119</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/keyboard.svg" alt="Pulse RGB Keyboard" loading="lazy">
+              <b>Pulse RGB Keyboard</b>
+              <span>$119</span>
+            </div>
+          </div>
+          <div class="cols2" style="margin-top:18px">
+            <div class="card">
+              <h3>Account activity</h3>
+              <ul class="feed">
+                <li>
+                  <b>Order shipped</b>
+                  <time>Today</time>
+                  <span>Stackly X Gaming PC</span>
+                </li>
+                <li>
+                  <b>Review posted</b>
+                  <time>Sep 20</time>
+                  <span>AeroBook 14 · 5 stars</span>
+                </li>
+                <li>
+                  <b>Password changed</b>
+                  <time>Sep 02</time>
+                  <span>From Bengaluru</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Offers for you</h3>
+              <div class="rev"><b>10% off accessories</b><span>Code SETUP10 · ends Oct 15</span></div>
+              <div class="rev"><b>Free SSD upgrade</b><span>On any gaming PC order</span></div>
+              <div class="rev"><b>Trade-in bonus</b><span>Up to $150 for your old laptop</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="p-Orders" class="panel">
+          <h1>Orders</h1>
+          <div class="card">
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Order</th>
+                  <th>Product</th>
+                  <th>Total</th>
+                  <th>Status</th>
+                  <th>Date</th>
+                </tr>
+                <tr>
+                  <td>#1042</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/pc.svg" alt="">Stackly X Gaming PC</span></td>
+                  <td>$1,899</td>
+                  <td>Shipped</td>
+                  <td>Sep 24</td>
+                </tr>
+                <tr>
+                  <td>#1041</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/laptop.svg" alt="">AeroBook 14</span></td>
+                  <td>$1,249</td>
+                  <td>Delivered</td>
+                  <td>Aug 12</td>
+                </tr>
+                <tr>
+                  <td>#1040</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/monitor.svg" alt="">Vision 27" 165Hz</span></td>
+                  <td>$329</td>
+                  <td>Delivered</td>
+                  <td>Jun 03</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="kpi">
+            <div>
+              <p>Orders this year</p>
+              <b>7</b>
+            </div>
+            <div>
+              <p>Total spent</p>
+              <b>$4,210</b>
+            </div>
+            <div>
+              <p>Saved with offers</p>
+              <b>$312</b>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Order tracking</h3>
+            <p><b>#1042</b> · in transit</p>
+            <ol class="track">
+              <li class="done">Placed</li>
+              <li class="done">Packed</li>
+              <li class="done">Shipped</li>
+              <li class="">Out for delivery</li>
+              <li class="">Delivered</li>
+            </ol>
+            <p style="margin-top:18px"><b>#1041</b> · delivered</p>
+            <ol class="track">
+              <li class="done">Placed</li>
+              <li class="done">Packed</li>
+              <li class="done">Shipped</li>
+              <li class="done">Out for delivery</li>
+              <li class="done">Delivered</li>
+            </ol>
+          </div>
+          <div class="card">
+            <h3>Order history</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Order</th>
+                  <th>Product</th>
+                  <th>Total</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>#1030</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/pc.svg" alt="">Stackly X Gaming PC</span></td>
+                  <td>$1,899</td>
+                  <td>Shipped</td>
+                </tr>
+                <tr>
+                  <td>#1029</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/laptop.svg" alt="">AeroBook 14</span></td>
+                  <td>$1,249</td>
+                  <td>Processing</td>
+                </tr>
+                <tr>
+                  <td>#1028</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/monitor.svg" alt="">Vision 27" 165Hz</span></td>
+                  <td>$329</td>
+                  <td>Delivered</td>
+                </tr>
+                <tr>
+                  <td>#1027</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/keyboard.svg" alt="">Pulse RGB Keyboard</span></td>
+                  <td>$119</td>
+                  <td>Returned</td>
+                </tr>
+                <tr>
+                  <td>#1026</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/mouse.svg" alt="">Glide Pro Mouse</span></td>
+                  <td>$79</td>
+                  <td>Delivered</td>
+                </tr>
+                <tr>
+                  <td>#1025</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/gpu.svg" alt="">RTX Core GPU</span></td>
+                  <td>$799</td>
+                  <td>Processing</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="p-Wishlist" class="panel">
+          <h1>Wishlist</h1>
+          <div class="pgrid">
+            <div class="pp">
+              <img src="assets/images/laptop.svg" alt="AeroBook 14" loading="lazy">
+              <b>AeroBook 14</b>
+              <span>$1,249</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/monitor.svg" alt="Vision 27" 165Hz" loading="lazy">
+              <b>Vision 27" 165Hz</b>
+              <span>$329</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/keyboard.svg" alt="Pulse RGB Keyboard" loading="lazy">
+              <b>Pulse RGB Keyboard</b>
+              <span>$119</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/mouse.svg" alt="Glide Pro Mouse" loading="lazy">
+              <b>Glide Pro Mouse</b>
+              <span>$79</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/gpu.svg" alt="RTX Core GPU" loading="lazy">
+              <b>RTX Core GPU</b>
+              <span>$799</span>
+            </div>
+          </div>
+          <div class="card" style="margin-top:18px">
+            <h3>Price drop alerts</h3>
+            <ul class="feed">
+              <li>
+                <b>RTX Core GPU</b>
+                <time>Today</time>
+                <span>Now $749, down from $799</span>
+              </li>
+              <li>
+                <b>Vision 27" 165Hz</b>
+                <time>Yesterday</time>
+                <span>Back in stock</span>
+              </li>
+              <li>
+                <b>Glide Pro Mouse</b>
+                <time>Sep 20</time>
+                <span>Now $69, down from $79</span>
+              </li>
+            </ul>
+          </div>
+          <h2 style="margin-top:28px">Saved for later</h2>
+          <div class="pgrid">
+            <div class="pp">
+              <img src="assets/images/mouse.svg" alt="Glide Pro Mouse" loading="lazy">
+              <b>Glide Pro Mouse</b>
+              <span>$79</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/laptop.svg" alt="AeroBook 14" loading="lazy">
+              <b>AeroBook 14</b>
+              <span>$1,249</span>
+            </div>
+            <div class="pp">
+              <img src="assets/images/ssd.svg" alt="NVMe SSD 2TB" loading="lazy">
+              <b>NVMe SSD 2TB</b>
+              <span>$149</span>
+            </div>
+          </div>
+        </div>
+        <div id="p-Warranty" class="panel">
+          <h1>Warranty</h1>
+          <div class="card">
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/pc.svg" alt=""></span>
+              <div class="g">
+                <b>Stackly X Gaming PC</b>
+                <div class="prog"><i style="width:88%;"></i></div>
+              </div>
+              <span>Until Sep 2029</span>
+            </div>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/laptop.svg" alt=""></span>
+              <div class="g">
+                <b>AeroBook 14</b>
+                <div class="prog"><i style="width:62%;"></i></div>
+              </div>
+              <span>Until Sep 2028</span>
+            </div>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/monitor.svg" alt=""></span>
+              <div class="g">
+                <b>Vision 27" 165Hz</b>
+                <div class="prog"><i style="width:55%;"></i></div>
+              </div>
+              <span>Until Mar 2028</span>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>How to make a claim</h3>
+              <ol class="track">
+                <li class="done">Report issue</li>
+                <li class="done">Get approval</li>
+                <li class="done">Send or drop off</li>
+                <li class="">Repaired</li>
+                <li class="">Returned</li>
+              </ol>
+            </div>
+            <div class="card">
+              <h3>Extend your cover</h3>
+              <div class="rev"><b>+1 year, Stackly Care</b><span>Accidental damage included · $99</span></div>
+              <div class="rev"><b>+2 years, Stackly Care Plus</b><span>Battery and screen cover · $179</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Covered products</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Product</th>
+                  <th>Purchased</th>
+                  <th>Expires</th>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/pc.svg" alt="">Stackly X Gaming PC</span></td>
+                  <td>Sep 2026</td>
+                  <td>Sep 2029</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/laptop.svg" alt="">AeroBook 14</span></td>
+                  <td>Sep 2025</td>
+                  <td>Sep 2028</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/monitor.svg" alt="">Vision 27" 165Hz</span></td>
+                  <td>Mar 2025</td>
+                  <td>Mar 2028</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Claim history</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Claim</th>
+                  <th>Product</th>
+                  <th>Outcome</th>
+                </tr>
+                <tr>
+                  <td>#C-12</td>
+                  <td>Pulse RGB Keyboard</td>
+                  <td>Replaced</td>
+                </tr>
+                <tr>
+                  <td>#C-09</td>
+                  <td>Glide Pro Mouse</td>
+                  <td>Repaired</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="p-Support" class="panel">
+          <h1>Support</h1>
+          <div class="card">
+            <h3>Your tickets</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Ticket</th>
+                  <th>Issue</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>#88</td>
+                  <td>Keyboard RGB flicker</td>
+                  <td>Open</td>
+                </tr>
+                <tr>
+                  <td>#71</td>
+                  <td>Laptop battery</td>
+                  <td>Closed</td>
+                </tr>
+              </table>
+            </div>
+            <p style="margin-top:14px"><a class="btn" href="contact.html">Contact support</a></p>
+          </div>
+          <div class="card">
+            <h3>Common questions</h3>
+            <div class="exp" tabindex="0" role="button" aria-expanded="false">
+              <h3>How do I track my order?</h3>
+              <p class="more">Open Orders in this dashboard and use the tracking bar for each order.</p>
+            </div>
+            <div class="exp" tabindex="0" role="button" aria-expanded="false">
+              <h3>How long does a repair take?</h3>
+              <p class="more">Most repairs take one to three days. You get a written quote first.</p>
+            </div>
+            <div class="exp" tabindex="0" role="button" aria-expanded="false">
+              <h3>Can I change my delivery address?</h3>
+              <p class="more">Yes, until the order is packed. Contact support with your order number.</p>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Contact us</h3>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Channel</th>
+                    <th>Details</th>
+                  </tr>
+                  <tr>
+                    <td>Phone</td>
+                    <td>+91 80 0000 0000</td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td>hello@stackly.example</td>
+                  </tr>
+                  <tr>
+                    <td>Store</td>
+                    <td>12 Tech Park Road, Bengaluru</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Support hours</h3>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                  </tr>
+                  <tr>
+                    <td>Mon – Fri</td>
+                    <td>10:00 – 20:00</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>10:00 – 18:00</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Open a new ticket</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Step</th>
+                  <th>What to do</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Pick the product that needs help</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Describe the issue and add photos</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>We reply within one working day</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="p-Settings" class="panel">
+          <h1>Settings</h1>
+          <div class="card">
+            <h3>Profile</h3>
+            <form data-validate novalidate>
+              <div class="two">
+                <div class="field">
+                  <label for="pf">First Name</label>
+                  <input id="pf" name="pf" type="text" data-v="name" autocomplete="off">
+                  <small class="err" role="alert"></small>
+                </div>
+                <div class="field">
+                  <label for="pl">Last Name</label>
+                  <input id="pl" name="pl" type="text" data-v="name" autocomplete="off">
+                  <small class="err" role="alert"></small>
+                </div>
+              </div>
+              <div class="field">
+                <label for="pe">Email</label>
+                <input id="pe" name="pe" type="text" data-v="email" autocomplete="off">
+                <small class="err" role="alert"></small>
+              </div>
+              <button class="btn" type="submit">Save changes</button>
+            </form>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Saved addresses</h3>
+              <div class="rev"><b>Home</b><span>21 Lake View Road, Bengaluru 560001</span></div>
+              <div class="rev"><b>Office</b><span>Tech Park, Whitefield, Bengaluru 560066</span></div>
+            </div>
+            <div class="card">
+              <h3>Notifications</h3>
+              <label class="tgl">Order updates<input type="checkbox" checked></label>
+              <label class="tgl">Price drop alerts<input type="checkbox" checked></label>
+              <label class="tgl">Offers and newsletters<input type="checkbox"></label>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Security</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Item</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>Password</td>
+                  <td>Changed Sep 02</td>
+                </tr>
+                <tr>
+                  <td>Two-step login</td>
+                  <td>Off</td>
+                </tr>
+                <tr>
+                  <td>Last login</td>
+                  <td>Today, Bengaluru</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Payment methods</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Method</th>
+                  <th>Details</th>
+                </tr>
+                <tr>
+                  <td>Card</td>
+                  <td>Visa ending 4821</td>
+                </tr>
+                <tr>
+                  <td>UPI</td>
+                  <td>ashish@upi</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Privacy</h3>
+            <label class="tgl">Share anonymous usage data<input type="checkbox"></label>
+            <label class="tgl">Personalised recommendations<input type="checkbox" checked></label>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

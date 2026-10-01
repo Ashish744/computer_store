@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | Stackly Computers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="dk">
+    <div id="loader" aria-hidden="true">
+      <div style="grid-column:span 2"><img class="pill" src="assets/logo/logo.webp" alt="" style="height:60px"></div>
+      <div>CPU</div>
+      <div>RAM</div>
+      <div>GPU</div>
+      <div style="grid-row:span 2">SSD</div>
+      <div style="grid-column:span 2">STORE</div>
+    </div>
+    <div class="bar2" id="prog"></div>
+    <header class="nav" id="nav">
+      <div class="wrap bar">
+        <a class="logo" href="index.html"><img src="assets/logo/logo.webp" alt="Stackly logo"></a>
+        <button class="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav id="menu" aria-label="Main">
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="acts"> <a href="login.html">Login</a> <a class="btn" href="create-account.html">Create Account</a> </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <!-- Optional video: add assets/videos/home-hero.mp4 and uncomment
+<video class="hero-vid" muted loop playsinline autoplay><source src="assets/videos/home-hero.mp4" type="video/mp4"></video> -->
+          <div class="hero-slide on" style="background-image:url('assets/images/home3.webp'),url('assets/images/bg-build.svg')" data-t="Custom RGB builds" data-s="Ryzen 9 · RTX 4080 · 32 GB"></div>
+          <div class="hero-slide" style="background-image:url('assets/images/home5.webp'),url('assets/images/bg-build.svg')" data-t="Precision internals" data-s="Every part stress-tested"></div>
+          <div class="hero-slide" style="background-image:url('assets/images/home4.webp'),url('assets/images/bg-workstation.svg')" data-t="Showpiece cases" data-s="Tempered glass · ARGB cooling"></div>
+          <div class="hero-slide" style="background-image:url('assets/images/home1.webp'),url('assets/images/bg-setup.svg')" data-t="Complete setups" data-s="Monitor · desk · lighting"></div>
+          <div class="hero-slide" style="background-image:url('assets/images/home2.webp'),url('assets/images/bg-tech.svg')" data-t="Peripherals" data-s="Hot-swap · per-key RGB"></div>
+        </div>
+        <div class="wrap">
+          <div>
+            <span class="tagline">New 2026 collection</span>
+            <h1 class="hero-h">
+              <span class="ln"><span>Build your</span></span>
+              <span class="ln">
+                <span class="rot">
+                  <span class="rwrap">
+                    <span class="rw">perfect</span>
+                    <span class="rw">powerful</span>
+                    <span class="rw">portable</span>
+                    <span class="rw">premium</span>
+                    <span class="rw">perfect</span>
+                  </span>
+                </span>
+              </span>
+              <span class="ln"><span>setup</span></span>
+            </h1>
+            <p class="lead">Gaming PCs, laptops, monitors and components, chosen, tested and supported by experts.</p>
+            <div class="cta">
+              <a class="btn mag" href="services.html">Shop Now</a>
+              <a class="btn ghost mag" href="blog.html">Buying Guides</a>
+            </div>
+          </div>
+          <div class="stage">
+            <div class="card float" style="left:0;top:20px">RTX 4080</div>
+            <div class="card float" style="right:0;top:60px">32 GB DDR5</div>
+            <div class="card float" style="left:20px;top:150px">2 TB NVMe</div>
+            <div class="now"><small>Now showing</small><b>Custom RGB builds</b><span>Ryzen 9 · RTX 4080 · 32 GB</span></div>
+          </div>
+        </div>
+        <div class="hero-dots">
+          <button type="button" class="on" aria-label="Show slide 1: Custom RGB builds"><i></i></button>
+          <button type="button" class="" aria-label="Show slide 2: Precision internals"><i></i></button>
+          <button type="button" class="" aria-label="Show slide 3: Showpiece cases"><i></i></button>
+          <button type="button" class="" aria-label="Show slide 4: Complete setups"><i></i></button>
+          <button type="button" class="" aria-label="Show slide 5: Peripherals"><i></i></button>
+        </div>
+      </section>
+      <section>
+        <div class="wrap">
+          <h2 data-r>Featured categories</h2>
+          <div class="grid">
+            <article class="card cat" data-r>
+              <img class="img" style="--h:200" src="assets/images/pc.svg" alt="Gaming PC" loading="lazy">
+              <h3>Gaming PCs</h3>
+              <p>Explore the range and compare builds.</p>
+            </article>
+            <article class="card cat" data-r>
+              <img class="img" style="--h:220" src="assets/images/laptop.svg" alt="Laptop" loading="lazy">
+              <h3>Laptops</h3>
+              <p>Explore the range and compare builds.</p>
+            </article>
+            <article class="card cat" data-r>
+              <img class="img" style="--h:240" src="assets/images/monitor.svg" alt="Monitor" loading="lazy">
+              <h3>Monitors</h3>
+              <p>Explore the range and compare builds.</p>
+            </article>
+            <article class="card cat" data-r>
+              <img class="img" style="--h:260" src="assets/images/keyboard.svg" alt="Keyboard" loading="lazy">
+              <h3>Keyboards</h3>
+              <p>Explore the range and compare builds.</p>
+            </article>
+            <article class="card cat" data-r>
+              <img class="img" style="--h:280" src="assets/images/mouse.svg" alt="Mouse" loading="lazy">
+              <h3>Mice</h3>
+              <p>Explore the range and compare builds.</p>
+            </article>
+            <article class="card cat" data-r>
+              <img class="img" style="--h:300" src="assets/images/cpu.svg" alt="Processor" loading="lazy">
+              <h3>Components</h3>
+              <p>Explore the range and compare builds.</p>
+            </article>
+            <article class="card cat" data-r>
+              <img class="img" style="--h:320" src="assets/images/headset.svg" alt="Headset" loading="lazy">
+              <h3>Accessories</h3>
+              <p>Explore the range and compare builds.</p>
+            </article>
+            <article class="card cat" data-r>
+              <img class="img" style="--h:340" src="assets/images/router.svg" alt="Networking router" loading="lazy">
+              <h3>Networking</h3>
+              <p>Explore the range and compare builds.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap">
+          <h2 data-r>Featured products</h2>
+          <div class="grid">
+            <article class="card tilt" data-r>
+              <img class="img" style="--h:220" src="assets/images/pc.svg" alt="Gaming PC" loading="lazy">
+              <h3>Stackly X Gaming PC</h3>
+              <p>★★★★★ 4.8</p>
+              <div class="meta"><span>Gaming PCs</span><span class="price">$1,899</span></div>
+              <div class="cta">
+                <button class="btn" data-cart>Add to Cart</button>
+                <a class="btn ghost" href="contact.html">Details</a>
+              </div>
+            </article>
+            <article class="card tilt" data-r>
+              <img class="img" style="--h:260" src="assets/images/laptop.svg" alt="Laptop" loading="lazy">
+              <h3>AeroBook 14</h3>
+              <p>★★★★★ 4.8</p>
+              <div class="meta"><span>Laptops</span><span class="price">$1,249</span></div>
+              <div class="cta">
+                <button class="btn" data-cart>Add to Cart</button>
+                <a class="btn ghost" href="contact.html">Details</a>
+              </div>
+            </article>
+            <article class="card tilt" data-r>
+              <img class="img" style="--h:190" src="assets/images/monitor.svg" alt="Monitor" loading="lazy">
+              <h3>Vision 27" 165Hz</h3>
+              <p>★★★★★ 4.8</p>
+              <div class="meta"><span>Monitors</span><span class="price">$329</span></div>
+              <div class="cta">
+                <button class="btn" data-cart>Add to Cart</button>
+                <a class="btn ghost" href="contact.html">Details</a>
+              </div>
+            </article>
+            <article class="card tilt" data-r>
+              <img class="img" style="--h:280" src="assets/images/keyboard.svg" alt="Keyboard" loading="lazy">
+              <h3>Pulse RGB Keyboard</h3>
+              <p>★★★★★ 4.8</p>
+              <div class="meta"><span>Keyboards</span><span class="price">$119</span></div>
+              <div class="cta">
+                <button class="btn" data-cart>Add to Cart</button>
+                <a class="btn ghost" href="contact.html">Details</a>
+              </div>
+            </article>
+            <article class="card tilt" data-r>
+              <img class="img" style="--h:200" src="assets/images/mouse.svg" alt="Mouse" loading="lazy">
+              <h3>Glide Pro Mouse</h3>
+              <p>★★★★★ 4.8</p>
+              <div class="meta"><span>Mice</span><span class="price">$79</span></div>
+              <div class="cta">
+                <button class="btn" data-cart>Add to Cart</button>
+                <a class="btn ghost" href="contact.html">Details</a>
+              </div>
+            </article>
+            <article class="card tilt" data-r>
+              <img class="img" style="--h:300" src="assets/images/gpu.svg" alt="Graphics card" loading="lazy">
+              <h3>RTX Core GPU</h3>
+              <p>★★★★★ 4.8</p>
+              <div class="meta"><span>Components</span><span class="price">$799</span></div>
+              <div class="cta">
+                <button class="btn" data-cart>Add to Cart</button>
+                <a class="btn ghost" href="contact.html">Details</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+          <a class="card promo " data-r href="services.html">
+            <div>
+              <h3>Build a custom PC</h3>
+              <p>Free assembly, testing and 3-year support.</p>
+              <span class="btn">Shop now</span>
+            </div>
+            <img src="assets/images/pc.svg" alt="Build a custom PC" loading="lazy">
+          </a>
+          <a class="card promo alt" data-r href="services.html">
+            <div>
+              <h3>Laptop upgrade week</h3>
+              <p>Extra RAM and SSD at cost price.</p>
+              <span class="btn">Shop now</span>
+            </div>
+            <img src="assets/images/laptop.svg" alt="Laptop upgrade week" loading="lazy">
+          </a>
+        </div>
+      </section>
+      <section class="dark">
+        <div class="wrap">
+          <h2 data-r>Our journey</h2>
+          <ol class="jt">
+            <li data-r>
+              <div class="jt-txt">
+                <b class="jt-yr">2020</b>
+                <h3>Store founded</h3>
+                <p>A repair bench, two technicians and a lot of coffee.</p>
+              </div>
+              <div class="jt-img" data-clip>
+                <img src="assets/images/home1.webp" data-fb="assets/images/monitor.svg" alt="Store founded" loading="lazy">
+              </div>
+            </li>
+            <li data-r>
+              <div class="jt-txt">
+                <b class="jt-yr">2021</b>
+                <h3>First online store</h3>
+                <p>Orders open across the city with same-day pickup.</p>
+              </div>
+              <div class="jt-img" data-clip>
+                <img src="assets/images/home2.webp" data-fb="assets/images/keyboard.svg" alt="First online store" loading="lazy">
+              </div>
+            </li>
+            <li data-r>
+              <div class="jt-txt">
+                <b class="jt-yr">2023</b>
+                <h3>Gaming division</h3>
+                <p>Custom rigs and esports setups join the range.</p>
+              </div>
+              <div class="jt-img" data-clip>
+                <img src="assets/images/home3.webp" data-fb="assets/images/gpu.svg" alt="Gaming division" loading="lazy">
+              </div>
+            </li>
+            <li data-r>
+              <div class="jt-txt">
+                <b class="jt-yr">2025</b>
+                <h3>Premium PC builds</h3>
+                <p>Our in-house testing lab opens.</p>
+              </div>
+              <div class="jt-img" data-clip>
+                <img src="assets/images/home4.webp" data-fb="assets/images/pc.svg" alt="Premium PC builds" loading="lazy">
+              </div>
+            </li>
+            <li data-r>
+              <div class="jt-txt">
+                <b class="jt-yr">2026</b>
+                <h3>Next-generation store</h3>
+                <p>A new flagship showroom, built around the customer.</p>
+              </div>
+              <div class="jt-img" data-clip>
+                <img src="assets/images/home5.webp" data-fb="assets/images/cpu.svg" alt="Next-generation store" loading="lazy">
+              </div>
+            </li>
+          </ol>
+          <div data-r>
+            <b>2021</b>
+            <p>First online store</p>
+          </div>
+          <div data-r>
+            <b>2023</b>
+            <p>Gaming division launched</p>
+          </div>
+          <div data-r>
+            <b>2025</b>
+            <p>Premium PC builds</p>
+          </div>
+          <div data-r>
+            <b>2026</b>
+            <p>Next-generation store</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<section class="hs" aria-label="Product showcase">
+  <div class="in">
+    <h2>Explore the store</h2>
+    <article class="card " data-r>
+      <img class="img" style="--h:220" src="assets/images/pc.svg" alt="Gaming PC" loading="lazy">
+      <h3>Gaming PCs</h3>
+      <p>Curated picks, tested in-house.</p>
+    </article>
+    <article class="card " data-r>
+      <img class="img" style="--h:260" src="assets/images/laptop.svg" alt="Laptop" loading="lazy">
+      <h3>Laptops</h3>
+      <p>Curated picks, tested in-house.</p>
+    </article>
+    <article class="card " data-r>
+      <img class="img" style="--h:190" src="assets/images/monitor.svg" alt="Monitor" loading="lazy">
+      <h3>Monitors</h3>
+      <p>Curated picks, tested in-house.</p>
+    </article>
+    <article class="card " data-r>
+      <img class="img" style="--h:300" src="assets/images/cpu.svg" alt="Processor" loading="lazy">
+      <h3>Components</h3>
+      <p>Curated picks, tested in-house.</p>
+    </article>
+    <article class="card " data-r>
+      <img class="img" style="--h:170" src="assets/images/headset.svg" alt="Headset" loading="lazy">
+      <h3>Accessories</h3>
+      <p>Curated picks, tested in-house.</p>
+    </article>
+  </div>
+</section>
+<section class="stick dark">
+  <div class="wrap">
+    <div class="vis photo" aria-live="polite">
+      <img src="assets/images/home4.webp" data-fb="assets/images/pc.svg" alt="Featured product">
+      <small>Ryzen 9 · RTX 4080 · 32 GB</small>
+    </div>
+    <div>
+      <div class="step" data-h="220" data-i="pc" data-img="assets/images/home4.webp" data-s="Ryzen 9 · RTX 4080 · 32 GB">
+        <h2>Stackly X Gaming PC</h2>
+        <p>Liquid-cooled and tuned for 4K gaming.</p>
+      </div>
+      <div class="step" data-h="220" data-i="cpu" data-img="assets/images/home5.webp" data-s="Tested for 24 hours">
+        <h2>Precision-built internals</h2>
+        <p>Every cable routed and every part stress-tested before it ships.</p>
+      </div>
+      <div class="step" data-h="220" data-i="keyboard" data-img="assets/images/home3.webp" data-s="Hot-swap · per-key RGB">
+        <h2>Pulse RGB Keyboard</h2>
+        <p>Hot-swappable switches with per-key lighting.</p>
+      </div>
+      <div class="step" data-h="220" data-i="monitor" data-img="assets/images/home2.webp" data-s="27&quot; · 165 Hz · 1 ms">
+        <h2>Vision 27" Monitor</h2>
+        <p>Fast, colour-accurate and easy on the eyes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2 data-r>Why Stackly</h2>
+    <div class="grid">
+      <article class="card float" data-r>
+        <div class="img" style="--h:210;height:90px">🚚</div>
+        <h3>Fast Delivery</h3>
+      </article>
+      <article class="card float" data-r>
+        <div class="img" style="--h:250;height:90px">✅</div>
+        <h3>Genuine Products</h3>
+      </article>
+      <article class="card float" data-r>
+        <div class="img" style="--h:290;height:90px">🛠️</div>
+        <h3>Expert Support</h3>
+      </article>
+      <article class="card float" data-r>
+        <div class="img" style="--h:230;height:90px">🛡️</div>
+        <h3>Warranty</h3>
+      </article>
+      <article class="card float" data-r>
+        <div class="img" style="--h:270;height:90px">🔒</div>
+        <h3>Secure Payments</h3>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="dark">
+  <div class="wrap">
+    <h2 data-r>Find your category</h2>
+    <p style="margin-bottom:20px">Hover, tap or press Enter to flip a card.</p>
+    <div class="grid">
+      <div class="card flip" data-r tabindex="0" role="button" aria-label="Gaming PCs">
+        <div class="in">
+          <div class="f"><img src="assets/images/pc.svg" alt="" style="height:90px;margin:auto">Gaming PCs</div>
+          <div class="k">
+            <b>Built to order</b>
+            <p>Choose parts, we assemble and test.</p>
+            <a class="btn" href="services.html">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="card flip" data-r tabindex="0" role="button" aria-label="Laptops">
+        <div class="in">
+          <div class="f"><img src="assets/images/laptop.svg" alt="" style="height:90px;margin:auto">Laptops</div>
+          <div class="k">
+            <b>Work anywhere</b>
+            <p>Light, fast and warranty-backed.</p>
+            <a class="btn" href="services.html">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="card flip" data-r tabindex="0" role="button" aria-label="Monitors">
+        <div class="in">
+          <div class="f"><img src="assets/images/monitor.svg" alt="" style="height:90px;margin:auto">Monitors</div>
+          <div class="k">
+            <b>Sharper views</b>
+            <p>Refresh rates from 60 to 240 Hz.</p>
+            <a class="btn" href="services.html">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="card flip" data-r tabindex="0" role="button" aria-label="Accessories">
+        <div class="in">
+          <div class="f"><img src="assets/images/keyboard.svg" alt="" style="height:90px;margin:auto">Accessories</div>
+          <div class="k">
+            <b>Complete the desk</b>
+            <p>Keyboards, mice, headsets and more.</p>
+            <a class="btn" href="services.html">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2 data-r>Customer reviews</h2>
+    <div class="grid">
+      <article class="card exp" data-r tabindex="0" role="button" aria-expanded="false">
+        <h3><span class="av">A</span> Ashish K. <span class="badge">Verified</span></h3>
+        <p>★★★★★ Great build quality.</p>
+        <p class="more">My custom PC arrived tested and quiet. Support answered within an hour.</p>
+      </article>
+      <article class="card exp" data-r tabindex="0" role="button" aria-expanded="false">
+        <h3><span class="av">M</span> Meera S. <span class="badge">Verified</span></h3>
+        <p>★★★★★ Great build quality.</p>
+        <p class="more">The laptop upgrade was quick and the price was clear from the start.</p>
+      </article>
+      <article class="card exp" data-r tabindex="0" role="button" aria-expanded="false">
+        <h3><span class="av">R</span> Rohan D. <span class="badge">Verified</span></h3>
+        <p>★★★★★ Great build quality.</p>
+        <p class="more">Helped me pick a monitor for editing. Colours are spot on.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="cta-big bgs mid ctr" style="background-image:linear-gradient(rgba(11,20,48,.3),rgba(11,20,48,.75)),url('assets/images/home1.webp'),url('assets/images/bg-build.svg')">
+  <div class="wrap">
+    <h2 data-r>Upgrade your setup today</h2>
+    <div class="cta">
+      <a class="btn mag" href="services.html">Shop Now</a>
+      <a class="btn ghost mag" href="blog.html">Explore Products</a>
+    </div>
+  </div>
+</section>
+<div class="mq" aria-hidden="true">
+  <div>
+    COMPUTERS • GAMING • LAPTOPS • COMPONENTS • ACCESSORIES • PERFORMANCE • COMPUTERS • GAMING • LAPTOPS • COMPONENTS • ACCESSORIES • PERFORMANCE • COMPUTERS • GAMING • LAPTOPS • COMPONENTS • ACCESSORIES • PERFORMANCE • COMPUTERS • GAMING • LAPTOPS • COMPONENTS • ACCESSORIES • PERFORMANCE •
+  </div>
+</div>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="index.html">
+          <img class="pill" src="assets/logo/logo.webp" alt="Stackly logo" style="height:64px">
+        </a>
+        <p style="margin-top:12px;max-width:320px">Premium PCs, laptops and components for gamers and creators.</p>
+        <div class="soc">
+          <a href="404.html" aria-label="Instagram" title="Instagram">IG</a>
+          <a href="404.html" aria-label="Facebook" title="Facebook">f</a>
+          <a href="404.html" aria-label="YouTube" title="YouTube">▶</a>
+          <a href="404.html" aria-label="X / Twitter" title="X / Twitter">X</a>
+          <a href="404.html" aria-label="LinkedIn" title="LinkedIn">in</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="404.html">PC Building</a></li>
+          <li><a href="404.html">Repairs</a></li>
+          <li><a href="404.html">Upgrades</a></li>
+        </ul>
+        <p style="margin-top:10px;font-size:.85rem">hello@stackly.example<br>+91 80 0000 0000</p>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form data-validate novalidate data-ok="Subscribed (demo).">
+          <div class="field">
+            <label for="nl">Email address</label>
+            <input id="nl" name="nl" type="text" data-v="email" autocomplete="off">
+            <small class="err" role="alert"></small>
+          </div>
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <details>
+      <summary>Privacy Policy</summary>
+      <p>
+        We only use your details to process orders and support requests, and never sell them. (Sample text — replace with your policy.)
+      </p>
+    </details>
+    <details>
+      <summary>Terms &amp; Conditions</summary>
+      <p>Prices and stock may change. Warranty follows each manufacturer's terms. (Sample text — replace with your terms.)</p>
+    </details>
+  </div>
+  <div class="mq" aria-hidden="true">
+    <div>
+      NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY •
+    </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/validation.js"></script>

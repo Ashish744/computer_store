@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create Account | Stackly Computers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="dk">
+    <div class="bar2" id="prog"></div>
+    <header class="nav" id="nav">
+      <div class="wrap bar">
+        <a class="logo" href="index.html"><img src="assets/logo/logo.webp" alt="Stackly logo"></a>
+        <button class="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav id="menu" aria-label="Main">
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="acts">
+            <a href="login.html">Login</a>
+            <a class="btn" href="create-account.html">Create Account</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="authbg" style="background-image:linear-gradient(rgba(11,20,48,.5),rgba(11,20,48,.7)),url('assets/images/home2.webp'),url('assets/images/bg-build.svg')">
+        <img class="deco float" style="left:6%;top:24%" src="assets/images/laptop.svg" alt="">
+        <img class="deco float" style="right:6%;bottom:14%" src="assets/images/mouse.svg" alt="">
+        <form class="glass" data-validate novalidate data-go="login.html">
+          <h1>Create Account</h1>
+          <p>Join Stackly for order tracking and offers.</p>
+          <div class="two">
+            <div class="field">
+              <label for="f">First Name</label>
+              <input id="f" name="f" type="text" data-v="name" autocomplete="off">
+              <small class="err" role="alert"></small>
+            </div>
+            <div class="field">
+              <label for="l">Last Name</label>
+              <input id="l" name="l" type="text" data-v="name" autocomplete="off">
+              <small class="err" role="alert"></small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="e">Email</label>
+            <input id="e" name="e" type="text" data-v="email" autocomplete="off">
+            <small class="err" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="ph">Phone</label>
+            <input id="ph" name="ph" type="text" data-v="phone" autocomplete="off">
+            <small class="err" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="p">Password</label>
+            <div class="pw">
+              <input id="p" name="p" type="password" data-v="pass" autocomplete="off" data-meter>
+              <button type="button" class="eye" aria-label="Show password" data-eye>👁</button>
+            </div>
+            <div class="meter"><i></i></div>
+            <small class="lbl"></small>
+            <small class="err" role="alert"></small>
+          </div>
+          <div class="field">
+            <label for="c">Confirm Password</label>
+            <div class="pw">
+              <input id="c" name="c" type="password" data-v="confirm" autocomplete="off">
+              <button type="button" class="eye" aria-label="Show password" data-eye>👁</button>
+            </div>
+            <small class="err" role="alert"></small>
+          </div>
+          <div class="field">
+            <label><input id="t" type="checkbox" data-v="check"> I accept the Terms &amp; Conditions</label>
+            <small class="err" role="alert"></small>
+          </div>
+          <button class="btn" type="submit">Create account</button>
+        </form>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/validation.js"></script>
+  </body>
+</html>

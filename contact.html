@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact | Stackly Computers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="dk">
+    <div class="bar2" id="prog"></div>
+    <header class="nav" id="nav">
+      <div class="wrap bar">
+        <a class="logo" href="index.html"><img src="assets/logo/logo.webp" alt="Stackly logo"></a>
+        <button class="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav id="menu" aria-label="Main">
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="acts">
+            <a href="login.html">Login</a>
+            <a class="btn" href="create-account.html">Create Account</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="contact">
+        <div class="store" style="background-image:linear-gradient(rgba(11,20,48,.35),rgba(11,20,48,.85)),url('assets/images/home3.webp'),url('assets/images/bg-setup.svg')">
+          <div>
+            <span class="tag">Contact</span>
+            <h1 class="big-h" style="font-size:clamp(2.4rem,5vw,4rem)" data-split>Talk to a technician</h1>
+            <dl>
+              <dt>Visit</dt>
+              <dd>12 Tech Park Road, Bengaluru</dd>
+              <dt>Phone</dt>
+              <dd>+91 80 0000 0000</dd>
+              <dt>Email</dt>
+              <dd>hello@stackly.example</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="formside">
+          <form class="glassl" data-validate novalidate>
+            <h2>Send us a message</h2>
+            <div class="two">
+              <div class="field">
+                <label for="fn">First Name</label>
+                <input id="fn" name="fn" type="text" data-v="name" autocomplete="off">
+                <small class="err" role="alert"></small>
+              </div>
+              <div class="field">
+                <label for="ln">Last Name</label>
+                <input id="ln" name="ln" type="text" data-v="name" autocomplete="off">
+                <small class="err" role="alert"></small>
+              </div>
+            </div>
+            <div class="field">
+              <label for="em">Email</label>
+              <input id="em" name="em" type="text" data-v="email" autocomplete="off">
+              <small class="err" role="alert"></small>
+            </div>
+            <div class="field">
+              <label for="msg">Message</label>
+              <textarea id="msg" rows="4" data-v="text"></textarea>
+              <small class="err" role="alert"></small>
+            </div>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+      <section class="split rev soft">
+        <div class="pic " data-clip>
+          <img src="assets/images/map.svg" alt="Map showing the Stackly store location" loading="lazy">
+          <span class="float-chip float" style="left:46%;top:24%">Stackly Store</span>
+        </div>
+        <div class="txt">
+          <span class="tag">Find us</span>
+          <h2 data-split>Come by the showroom</h2>
+          <p>Free parking behind the building. Metro station five minutes on foot.</p>
+          <table>
+            <tr>
+              <th>Mon – Fri</th>
+              <td>10:00 – 20:00</td>
+            </tr>
+            <tr>
+              <th>Saturday</th>
+              <td>10:00 – 18:00</td>
+            </tr>
+            <tr>
+              <th>Sunday</th>
+              <td>Closed</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="wrap narrow">
+          <h2 data-split>Common questions</h2>
+          <div class="acc">
+            <div class="exp" tabindex="0" role="button" aria-expanded="false" data-r>
+              <h3>Do you offer warranty?</h3>
+              <p class="more">Yes. Every product carries the manufacturer warranty, and our builds add 3 years of service support.</p>
+            </div>
+            <div class="exp" tabindex="0" role="button" aria-expanded="false" data-r>
+              <h3>Can you build a custom PC?</h3>
+              <p class="more">Yes. Share your budget and use case and we will propose a configuration within a day.</p>
+            </div>
+            <div class="exp" tabindex="0" role="button" aria-expanded="false" data-r>
+              <h3>How long do repairs take?</h3>
+              <p class="more">Most repairs take one to three days. We confirm the timeline in your written quote.</p>
+            </div>
+            <div class="exp" tabindex="0" role="button" aria-expanded="false" data-r>
+              <h3>Do you deliver?</h3>
+              <p class="more">We deliver across the city and set up your PC on request.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bgs mid ctr" style="--pos:center;background-image:linear-gradient(rgba(11,20,48,.3),rgba(11,20,48,.75)),url('assets/images/home2.webp'),url('assets/images/bg-build.svg')">
+        <div class="wrap">
+          <div class="box">
+            <h2 class="big-h" style="font-size:clamp(2rem,5vw,3.6rem)" data-split>Still have a question?</h2>
+            <p style="margin:14px auto">Call or visit us. A technician will answer, not a script.</p>
+            <div class="cta" style="justify-content:center">
+              <a class="btn mag" href="contact.html">Talk to us</a>
+              <a class="btn ghost mag" href="services.html">Our services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <a class="logo" href="index.html">
+              <img class="pill" src="assets/logo/logo.webp" alt="Stackly logo" style="height:64px">
+            </a>
+            <p style="margin-top:12px;max-width:320px">Premium PCs, laptops and components for gamers and creators.</p>
+            <div class="soc">
+              <a href="404.html" aria-label="Instagram" title="Instagram">IG</a>
+              <a href="404.html" aria-label="Facebook" title="Facebook">f</a>
+              <a href="404.html" aria-label="YouTube" title="YouTube">▶</a>
+              <a href="404.html" aria-label="X / Twitter" title="X / Twitter">X</a>
+              <a href="404.html" aria-label="LinkedIn" title="LinkedIn">in</a>
+            </div>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              li><a href="index.html">Home</a></li>
+              li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li><a href="404.html">PC Building</a></li>
+              <li><a href="404.html">Repairs</a></li>
+              <li><a href="404.html">Upgrades</a></li>
+            </ul>
+            <p style="margin-top:10px;font-size:.85rem">hello@stackly.example<br>+91 80 0000 0000</p>
+          </div>
+          <div>
+            <h4>Newsletter</h4>
+            <form data-validate novalidate data-ok="Subscribed (demo).">
+              <div class="field">
+                <label for="nl">Email address</label>
+                <input id="nl" name="nl" type="text" data-v="email" autocomplete="off">
+                <small class="err" role="alert"></small>
+              </div>
+              <button class="btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <details>
+          <summary>Privacy Policy</summary>
+          <p>
+            We only use your details to process orders and support requests, and never sell them. (Sample text — replace with your policy.)
+          </p>
+        </details>
+        <details>
+          <summary>Terms &amp; Conditions</summary>
+          <p>Prices and stock may change. Warranty follows each manufacturer's terms. (Sample text — replace with your terms.)</p>
+        </details>
+      </div>
+      <div class="mq" aria-hidden="true">
+        <div>
+          NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY • NOVATECH • BUILD • UPGRADE • PLAY •
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/validation.js"></script>
+  </body>
+</html>

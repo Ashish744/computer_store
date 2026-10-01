@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin Dashboard | Stackly Computers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+  </head>
+  <body class="d">
+    <header class="dtop">
+      <div class="dleft">
+        <button type="button" class="dburger" id="dburger" aria-label="Toggle menu" aria-controls="side" aria-expanded="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="logo" href="index.html"><img src="assets/logo/logo.webp" alt="Stackly logo"></a>
+      </div>
+      <div class="prof">
+        <button id="pb" aria-haspopup="true" aria-expanded="false">Admin ▾</button>
+        <div class="pm" hidden><a href="index.html">View site</a><a href="login.html">Log out</a></div>
+      </div>
+    </header>
+    <div class="scrim" id="scrim"></div>
+    <div class="dash">
+      <aside id="side" aria-label="Admin menu">
+        <div class="side-head">
+          <a class="logo" href="index.html"><img src="assets/logo/logo.webp" alt="Stackly logo"></a>
+          <button type="button" class="sclose" aria-label="Close menu">✕</button>
+        </div>
+        <p class="grp">Store</p>
+        <button type="button" data-p="Overview" class="on">Overview</button>
+        <button type="button" data-p="Products" class="">Products</button>
+        <button type="button" data-p="Orders" class="">Orders</button>
+        <button type="button" data-p="Inventory" class="">Inventory</button>
+        <p class="grp">People</p>
+        <button type="button" data-p="Customers" class="">Customers</button>
+        <button type="button" data-p="Support" class="">Support</button>
+        <p class="grp">System</p>
+        <button type="button" data-p="Analytics" class="">Analytics</button>
+        <button type="button" data-p="Settings" class="">Settings</button>
+      </aside>
+      <main class="dmain">
+        <div id="p-Overview" class="panel on">
+          <h1>Overview</h1>
+          <div class="kpi">
+            <div>
+              <p>Revenue</p>
+              <b>$<span data-n="128450">0</span></b>
+            </div>
+            <div>
+              <p>Orders</p>
+              <b><span data-n="1284">0</span></b>
+            </div>
+            <div>
+              <p>Products</p>
+              <b><span data-n="342">0</span></b>
+            </div>
+            <div>
+              <p>Customers</p>
+              <b><span data-n="5920">0</span></b>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Sales, last 7 days</h3>
+              <svg class="area" viewBox="0 0 400 160" role="img" aria-label="Sales trend">
+                <defs>
+                  <linearGradient id="ar" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#3fb8a0" stop-opacity=".5"/>
+                    <stop offset="1" stop-color="#3fb8a0" stop-opacity="0"/>
+                  </lineargradient>
+                </defs>
+                <path d="M0 120L60 90L120 100L180 60L240 70L300 30L360 45L400 15V160H0Z" fill="url(#ar)"/>
+                <path d="M0 120L60 90L120 100L180 60L240 70L300 30L360 45L400 15" fill="none" stroke="#1f5f99" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="card">
+              <h3>Low stock</h3>
+              <div class="li">
+                <span class="li"><img class="thumb" src="assets/images/gpu.svg" alt=""></span>
+                <div class="g">
+                  <b>RTX Core GPU</b>
+                  <div class="prog"><i style="width:24%;background:#e5484d"></i></div>
+                </div>
+                <span>3 left</span>
+              </div>
+              <div class="li">
+                <span class="li"><img class="thumb" src="assets/images/ssd.svg" alt=""></span>
+                <div class="g">
+                  <b>NVMe SSD 2TB</b>
+                  <div class="prog"><i style="width:40%;background:#e5484d"></i></div>
+                </div>
+                <span>5 left</span>
+              </div>
+              <div class="li">
+                <span class="li"><img class="thumb" src="assets/images/ram.svg" alt=""></span>
+                <div class="g">
+                  <b>DDR5 32GB Kit</b>
+                  <div class="prog"><i style="width:56%;background:#e5484d"></i></div>
+                </div>
+                <span>7 left</span>
+              </div>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Product performance</h3>
+              <div class="li">
+                <span class="li"><img class="thumb" src="assets/images/pc.svg" alt=""></span>
+                <div class="g">
+                  <b>Stackly X Gaming PC</b>
+                  <div class="prog"><i style="width:92%;"></i></div>
+                </div>
+                <span>184 sold</span>
+              </div>
+              <div class="li">
+                <span class="li"><img class="thumb" src="assets/images/laptop.svg" alt=""></span>
+                <div class="g">
+                  <b>AeroBook 14</b>
+                  <div class="prog"><i style="width:74%;"></i></div>
+                </div>
+                <span>142 sold</span>
+              </div>
+              <div class="li">
+                <span class="li"><img class="thumb" src="assets/images/monitor.svg" alt=""></span>
+                <div class="g">
+                  <b>Vision 27" 165Hz</b>
+                  <div class="prog"><i style="width:61%;"></i></div>
+                </div>
+                <span>118 sold</span>
+              </div>
+              <div class="li">
+                <span class="li"><img class="thumb" src="assets/images/keyboard.svg" alt=""></span>
+                <div class="g">
+                  <b>Pulse RGB Keyboard</b>
+                  <div class="prog"><i style="width:48%;"></i></div>
+                </div>
+                <span>96 sold</span>
+              </div>
+              <div class="li">
+                <span class="li"><img class="thumb" src="assets/images/mouse.svg" alt=""></span>
+                <div class="g">
+                  <b>Glide Pro Mouse</b>
+                  <div class="prog"><i style="width:35%;"></i></div>
+                </div>
+                <span>71 sold</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Recent orders</h3>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Order</th>
+                    <th>Product</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr>
+                    <td>#1042</td>
+                    <td><span class="li"><img class="thumb" src="assets/images/pc.svg" alt="">Stackly X Gaming PC</span></td>
+                    <td>$1,899</td>
+                    <td>Shipped</td>
+                  </tr>
+                  <tr>
+                    <td>#1041</td>
+                    <td><span class="li"><img class="thumb" src="assets/images/laptop.svg" alt="">AeroBook 14</span></td>
+                    <td>$1,249</td>
+                    <td>Processing</td>
+                  </tr>
+                  <tr>
+                    <td>#1040</td>
+                    <td><span class="li"><img class="thumb" src="assets/images/monitor.svg" alt="">Vision 27" 165Hz</span></td>
+                    <td>$329</td>
+                    <td>Delivered</td>
+                  </tr>
+                  <tr>
+                    <td>#1039</td>
+                    <td><span class="li"><img class="thumb" src="assets/images/keyboard.svg" alt="">Pulse RGB Keyboard</span></td>
+                    <td>$119</td>
+                    <td>Shipped</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Orders by status</h3>
+              <div class="donutwrap">
+                <div class="donut" style="background:conic-gradient(#3fb8a0 0% 52%,#1f5f99 52% 75%,#f59e0b 75% 92%,#e5484d 92% 100%)" role="img" aria-label="Breakdown chart">
+                </div>
+                <ul class="legend">
+                  <li><i style="background:#3fb8a0"></i>Delivered<b>52%</b></li>
+                  <li><i style="background:#1f5f99"></i>Shipped<b>23%</b></li>
+                  <li><i style="background:#f59e0b"></i>Processing<b>17%</b></li>
+                  <li><i style="background:#e5484d"></i>Returned<b>8%</b></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Revenue by region</h3>
+              <div class="li">
+                <div class="g">
+                  <b>Bengaluru</b>
+                  <div class="prog"><i style="width:78%;"></i></div>
+                </div>
+                <span>78%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Mumbai</b>
+                  <div class="prog"><i style="width:61%;"></i></div>
+                </div>
+                <span>61%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Delhi NCR</b>
+                  <div class="prog"><i style="width:54%;"></i></div>
+                </div>
+                <span>54%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Chennai</b>
+                  <div class="prog"><i style="width:37%;"></i></div>
+                </div>
+                <span>37%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Hyderabad</b>
+                  <div class="prog"><i style="width:29%;"></i></div>
+                </div>
+                <span>29%</span>
+              </div>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Recent activity</h3>
+              <ul class="feed">
+                <li>
+                  <b>New order #1042</b>
+                  <time>2 min ago</time>
+                  <span>Ashish K. bought Stackly X Gaming PC</span>
+                </li>
+                <li>
+                  <b>Low stock alert</b>
+                  <time>18 min ago</time>
+                  <span>RTX Core GPU has 3 units left</span>
+                </li>
+                <li>
+                  <b>Support ticket #88</b>
+                  <time>1 h ago</time>
+                  <span>Keyboard RGB flicker reported</span>
+                </li>
+                <li>
+                  <b>Refund approved</b>
+                  <time>3 h ago</time>
+                  <span>Order #1019, $119</span>
+                </li>
+                <li>
+                  <b>New customer</b>
+                  <time>5 h ago</time>
+                  <span>Kabir S. created an account</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Monthly targets</h3>
+              <div class="li">
+                <div class="g">
+                  <b>Revenue goal $150k</b>
+                  <div class="prog"><i style="width:86%;"></i></div>
+                </div>
+                <span>86%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Orders goal 1,500</b>
+                  <div class="prog"><i style="width:72%;"></i></div>
+                </div>
+                <span>72%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>New customers 400</b>
+                  <div class="prog"><i style="width:91%;"></i></div>
+                </div>
+                <span>91%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Support CSAT 95%</b>
+                  <div class="prog"><i style="width:96%;"></i></div>
+                </div>
+                <span>96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Top customers</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Customer</th>
+                  <th>Orders</th>
+                  <th>Spent</th>
+                  <th>Last order</th>
+                </tr>
+                <tr>
+                  <td>Ashish K.</td>
+                  <td>12</td>
+                  <td>$4,210</td>
+                  <td>Sep 24</td>
+                </tr>
+                <tr>
+                  <td>Meera S.</td>
+                  <td>7</td>
+                  <td>$2,980</td>
+                  <td>Sep 21</td>
+                </tr>
+                <tr>
+                  <td>Rohan D.</td>
+                  <td>5</td>
+                  <td>$1,430</td>
+                  <td>Sep 18</td>
+                </tr>
+                <tr>
+                  <td>Priya N.</td>
+                  <td>4</td>
+                  <td>$1,120</td>
+                  <td>Sep 12</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Latest reviews</h3>
+              <div class="rev"><b>Ashish K. · ★★★★★</b><span>Quiet, fast and beautifully built.</span></div>
+              <div class="rev"><b>Meera S. · ★★★★</b><span>Great laptop, delivery was a day late.</span></div>
+              <div class="rev"><b>Rohan D. · ★★★★★</b><span>Colour accuracy is excellent for editing.</span></div>
+            </div>
+            <div class="card">
+              <h3>Shipments in transit</h3>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Order</th>
+                    <th>City</th>
+                    <th>ETA</th>
+                  </tr>
+                  <tr>
+                    <td>#1042</td>
+                    <td>Bengaluru</td>
+                    <td>Fri</td>
+                  </tr>
+                  <tr>
+                    <td>#1040</td>
+                    <td>Mumbai</td>
+                    <td>Sat</td>
+                  </tr>
+                  <tr>
+                    <td>#1038</td>
+                    <td>Chennai</td>
+                    <td>Mon</td>
+                  </tr>
+                  <tr>
+                    <td>#1035</td>
+                    <td>Delhi</td>
+                    <td>Mon</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="p-Products" class="panel">
+          <h1>Products</h1>
+          <div class="card">
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Product</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Stock</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/pc.svg" alt="">Stackly X Gaming PC</span></td>
+                  <td>Gaming PCs</td>
+                  <td>$1,899</td>
+                  <td>12</td>
+                  <td>In stock</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/laptop.svg" alt="">AeroBook 14</span></td>
+                  <td>Laptops</td>
+                  <td>$1,249</td>
+                  <td>34</td>
+                  <td>In stock</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/monitor.svg" alt="">Vision 27" 165Hz</span></td>
+                  <td>Monitors</td>
+                  <td>$329</td>
+                  <td>27</td>
+                  <td>In stock</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/keyboard.svg" alt="">Pulse RGB Keyboard</span></td>
+                  <td>Keyboards</td>
+                  <td>$119</td>
+                  <td>64</td>
+                  <td>In stock</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/mouse.svg" alt="">Glide Pro Mouse</span></td>
+                  <td>Mice</td>
+                  <td>$79</td>
+                  <td>80</td>
+                  <td>In stock</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/gpu.svg" alt="">RTX Core GPU</span></td>
+                  <td>Components</td>
+                  <td>$799</td>
+                  <td>3</td>
+                  <td>Low</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/ssd.svg" alt="">NVMe SSD 2TB</span></td>
+                  <td>Components</td>
+                  <td>$149</td>
+                  <td>5</td>
+                  <td>Low</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/ram.svg" alt="">DDR5 32GB Kit</span></td>
+                  <td>Components</td>
+                  <td>$119</td>
+                  <td>7</td>
+                  <td>Low</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Best sellers</h3>
+              <div class="li">
+                <div class="g">
+                  <b>Pulse RGB Keyboard</b>
+                  <div class="prog"><i style="width:92%;"></i></div>
+                </div>
+                <span>92 sold</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Glide Pro Mouse</b>
+                  <div class="prog"><i style="width:84%;"></i></div>
+                </div>
+                <span>84 sold</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>NVMe SSD 2TB</b>
+                  <div class="prog"><i style="width:71%;"></i></div>
+                </div>
+                <span>71 sold</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Vision 27" 165Hz</b>
+                  <div class="prog"><i style="width:58%;"></i></div>
+                </div>
+                <span>58 sold</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Category share</h3>
+              <div class="donutwrap">
+                <div class="donut" style="background:conic-gradient(#3fb8a0 0% 38%,#1f5f99 38% 65%,#f59e0b 65% 86%,#e5484d 86% 100%)" role="img" aria-label="Breakdown chart">
+                </div>
+                <ul class="legend">
+                  <li><i style="background:#3fb8a0"></i>Components<b>38%</b></li>
+                  <li><i style="background:#1f5f99"></i>Peripherals<b>27%</b></li>
+                  <li><i style="background:#f59e0b"></i>Laptops<b>21%</b></li>
+                  <li><i style="background:#e5484d"></i>Gaming PCs<b>14%</b></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Recently added</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Product</th>
+                  <th>Added</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/ram.svg" alt="">DDR5 32GB Kit</span></td>
+                  <td>Sep 20</td>
+                  <td>Published</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/ssd.svg" alt="">NVMe SSD 2TB</span></td>
+                  <td>Sep 14</td>
+                  <td>Published</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/gpu.svg" alt="">RTX Core GPU</span></td>
+                  <td>Sep 08</td>
+                  <td>Draft</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="p-Orders" class="panel">
+          <h1>Orders</h1>
+          <div class="card">
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Order</th>
+                  <th>Product</th>
+                  <th>Total</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>#1042</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/pc.svg" alt="">Stackly X Gaming PC</span></td>
+                  <td>$1,899</td>
+                  <td>Shipped</td>
+                </tr>
+                <tr>
+                  <td>#1041</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/laptop.svg" alt="">AeroBook 14</span></td>
+                  <td>$1,249</td>
+                  <td>Processing</td>
+                </tr>
+                <tr>
+                  <td>#1040</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/monitor.svg" alt="">Vision 27" 165Hz</span></td>
+                  <td>$329</td>
+                  <td>Delivered</td>
+                </tr>
+                <tr>
+                  <td>#1039</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/keyboard.svg" alt="">Pulse RGB Keyboard</span></td>
+                  <td>$119</td>
+                  <td>Shipped</td>
+                </tr>
+                <tr>
+                  <td>#1038</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/mouse.svg" alt="">Glide Pro Mouse</span></td>
+                  <td>$79</td>
+                  <td>Delivered</td>
+                </tr>
+                <tr>
+                  <td>#1037</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/gpu.svg" alt="">RTX Core GPU</span></td>
+                  <td>$799</td>
+                  <td>Processing</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="kpi">
+            <div>
+              <p>Pending</p>
+              <b>42</b>
+            </div>
+            <div>
+              <p>Shipped</p>
+              <b>118</b>
+            </div>
+            <div>
+              <p>Delivered</p>
+              <b>1,046</b>
+            </div>
+            <div>
+              <p>Returned</p>
+              <b>78</b>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Order status</h3>
+              <div class="donutwrap">
+                <div class="donut" style="background:conic-gradient(#3fb8a0 0% 52%,#1f5f99 52% 75%,#f59e0b 75% 92%,#e5484d 92% 100%)" role="img" aria-label="Breakdown chart">
+                </div>
+                <ul class="legend">
+                  <li><i style="background:#3fb8a0"></i>Delivered<b>52%</b></li>
+                  <li><i style="background:#1f5f99"></i>Shipped<b>23%</b></li>
+                  <li><i style="background:#f59e0b"></i>Processing<b>17%</b></li>
+                  <li><i style="background:#e5484d"></i>Returned<b>8%</b></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Refund requests</h3>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Order</th>
+                    <th>Reason</th>
+                    <th>Amount</th>
+                  </tr>
+                  <tr>
+                    <td>#1019</td>
+                    <td>Wrong colour</td>
+                    <td>$119</td>
+                  </tr>
+                  <tr>
+                    <td>#1011</td>
+                    <td>Damaged box</td>
+                    <td>$79</td>
+                  </tr>
+                  <tr>
+                    <td>#1004</td>
+                    <td>Changed mind</td>
+                    <td>$329</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Older orders</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Order</th>
+                  <th>Product</th>
+                  <th>Total</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>#1030</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/pc.svg" alt="">Stackly X Gaming PC</span></td>
+                  <td>$1,899</td>
+                  <td>Shipped</td>
+                </tr>
+                <tr>
+                  <td>#1029</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/laptop.svg" alt="">AeroBook 14</span></td>
+                  <td>$1,249</td>
+                  <td>Processing</td>
+                </tr>
+                <tr>
+                  <td>#1028</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/monitor.svg" alt="">Vision 27" 165Hz</span></td>
+                  <td>$329</td>
+                  <td>Delivered</td>
+                </tr>
+                <tr>
+                  <td>#1027</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/keyboard.svg" alt="">Pulse RGB Keyboard</span></td>
+                  <td>$119</td>
+                  <td>Returned</td>
+                </tr>
+                <tr>
+                  <td>#1026</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/mouse.svg" alt="">Glide Pro Mouse</span></td>
+                  <td>$79</td>
+                  <td>Delivered</td>
+                </tr>
+                <tr>
+                  <td>#1025</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/gpu.svg" alt="">RTX Core GPU</span></td>
+                  <td>$799</td>
+                  <td>Processing</td>
+                </tr>
+                <tr>
+                  <td>#1024</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/ssd.svg" alt="">NVMe SSD 2TB</span></td>
+                  <td>$1,899</td>
+                  <td>Shipped</td>
+                </tr>
+                <tr>
+                  <td>#1023</td>
+                  <td><span class="li"><img class="thumb" src="assets/images/ram.svg" alt="">DDR5 32GB Kit</span></td>
+                  <td>$1,249</td>
+                  <td>Processing</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="p-Inventory" class="panel">
+          <h1>Inventory</h1>
+          <div class="card">
+            <h3>Stock levels</h3>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/pc.svg" alt=""></span>
+              <div class="g">
+                <b>Stackly X Gaming PC</b>
+                <div class="prog"><i style="width:14.399999999999999%;"></i></div>
+              </div>
+              <span>12 units</span>
+            </div>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/laptop.svg" alt=""></span>
+              <div class="g">
+                <b>AeroBook 14</b>
+                <div class="prog"><i style="width:40.8%;"></i></div>
+              </div>
+              <span>34 units</span>
+            </div>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/monitor.svg" alt=""></span>
+              <div class="g">
+                <b>Vision 27" 165Hz</b>
+                <div class="prog"><i style="width:32.4%;"></i></div>
+              </div>
+              <span>27 units</span>
+            </div>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/keyboard.svg" alt=""></span>
+              <div class="g">
+                <b>Pulse RGB Keyboard</b>
+                <div class="prog"><i style="width:76.8%;"></i></div>
+              </div>
+              <span>64 units</span>
+            </div>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/mouse.svg" alt=""></span>
+              <div class="g">
+                <b>Glide Pro Mouse</b>
+                <div class="prog"><i style="width:96.0%;"></i></div>
+              </div>
+              <span>80 units</span>
+            </div>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/gpu.svg" alt=""></span>
+              <div class="g">
+                <b>RTX Core GPU</b>
+                <div class="prog"><i style="width:3.5999999999999996%;background:#e5484d"></i></div>
+              </div>
+              <span>3 units</span>
+            </div>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/ssd.svg" alt=""></span>
+              <div class="g">
+                <b>NVMe SSD 2TB</b>
+                <div class="prog"><i style="width:6.0%;background:#e5484d"></i></div>
+              </div>
+              <span>5 units</span>
+            </div>
+            <div class="li">
+              <span class="li"><img class="thumb" src="assets/images/ram.svg" alt=""></span>
+              <div class="g">
+                <b>DDR5 32GB Kit</b>
+                <div class="prog"><i style="width:8.4%;background:#e5484d"></i></div>
+              </div>
+              <span>7 units</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Reorder suggestions</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Product</th>
+                  <th>In stock</th>
+                  <th>Weekly sales</th>
+                  <th>Suggested order</th>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/gpu.svg" alt="">RTX Core GPU</span></td>
+                  <td>3</td>
+                  <td>9</td>
+                  <td>20 units</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/ssd.svg" alt="">NVMe SSD 2TB</span></td>
+                  <td>5</td>
+                  <td>12</td>
+                  <td>30 units</td>
+                </tr>
+                <tr>
+                  <td><span class="li"><img class="thumb" src="assets/images/ram.svg" alt="">DDR5 32GB Kit</span></td>
+                  <td>7</td>
+                  <td>10</td>
+                  <td>25 units</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Warehouse capacity</h3>
+              <div class="li">
+                <div class="g">
+                  <b>Main store</b>
+                  <div class="prog"><i style="width:82%;"></i></div>
+                </div>
+                <span>82%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Warehouse A</b>
+                  <div class="prog"><i style="width:64%;"></i></div>
+                </div>
+                <span>64%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Warehouse B</b>
+                  <div class="prog"><i style="width:41%;"></i></div>
+                </div>
+                <span>41%</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Stock movement</h3>
+              <ul class="feed">
+                <li>
+                  <b>+40 Pulse Keyboards</b>
+                  <time>Today</time>
+                  <span>Supplier delivery</span>
+                </li>
+                <li>
+                  <b>-3 RTX Core GPU</b>
+                  <time>Today</time>
+                  <span>Orders shipped</span>
+                </li>
+                <li>
+                  <b>+25 NVMe SSD</b>
+                  <time>Yesterday</time>
+                  <span>Supplier delivery</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="p-Customers" class="panel">
+          <h1>Customers</h1>
+          <div class="card">
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Orders</th>
+                  <th>Spent</th>
+                  <th>Joined</th>
+                </tr>
+                <tr>
+                  <td>Ashish K.</td>
+                  <td>ashish@example.com</td>
+                  <td>12</td>
+                  <td>$4,210</td>
+                  <td>Mar 2022</td>
+                </tr>
+                <tr>
+                  <td>Meera S.</td>
+                  <td>meera@example.com</td>
+                  <td>7</td>
+                  <td>$2,980</td>
+                  <td>Jun 2023</td>
+                </tr>
+                <tr>
+                  <td>Rohan D.</td>
+                  <td>rohan@example.com</td>
+                  <td>5</td>
+                  <td>$1,430</td>
+                  <td>Jan 2024</td>
+                </tr>
+                <tr>
+                  <td>Kabir S.</td>
+                  <td>kabir@example.com</td>
+                  <td>3</td>
+                  <td>$890</td>
+                  <td>Aug 2025</td>
+                </tr>
+                <tr>
+                  <td>Neha R.</td>
+                  <td>neha@example.com</td>
+                  <td>2</td>
+                  <td>$410</td>
+                  <td>Feb 2026</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="kpi">
+            <div>
+              <p>New (30 days)</p>
+              <b>124</b>
+            </div>
+            <div>
+              <p>Returning</p>
+              <b>2,310</b>
+            </div>
+            <div>
+              <p>VIP</p>
+              <b>86</b>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Customer locations</h3>
+              <div class="donutwrap">
+                <div class="donut" style="background:conic-gradient(#3fb8a0 0% 46%,#1f5f99 46% 70%,#f59e0b 70% 89%,#e5484d 89% 100%)" role="img" aria-label="Breakdown chart">
+                </div>
+                <ul class="legend">
+                  <li><i style="background:#3fb8a0"></i>Bengaluru<b>46%</b></li>
+                  <li><i style="background:#1f5f99"></i>Mumbai<b>24%</b></li>
+                  <li><i style="background:#f59e0b"></i>Delhi NCR<b>19%</b></li>
+                  <li><i style="background:#e5484d"></i>Other<b>11%</b></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Customer activity</h3>
+              <ul class="feed">
+                <li>
+                  <b>Meera S. left a review</b>
+                  <time>1 h ago</time>
+                  <span>AeroBook 14 · 4 stars</span>
+                </li>
+                <li>
+                  <b>Rohan D. added to wishlist</b>
+                  <time>3 h ago</time>
+                  <span>Vision 27" 165Hz</span>
+                </li>
+                <li>
+                  <b>Neha R. signed up</b>
+                  <time>Yesterday</time>
+                  <span>New account</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Recent sign-ups</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>City</th>
+                  <th>Joined</th>
+                </tr>
+                <tr>
+                  <td>Neha R.</td>
+                  <td>neha@example.com</td>
+                  <td>Pune</td>
+                  <td>Sep 26</td>
+                </tr>
+                <tr>
+                  <td>Kabir S.</td>
+                  <td>kabir@example.com</td>
+                  <td>Bengaluru</td>
+                  <td>Sep 24</td>
+                </tr>
+                <tr>
+                  <td>Anita M.</td>
+                  <td>anita@example.com</td>
+                  <td>Chennai</td>
+                  <td>Sep 22</td>
+                </tr>
+                <tr>
+                  <td>Dev P.</td>
+                  <td>dev@example.com</td>
+                  <td>Mumbai</td>
+                  <td>Sep 19</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Customer segments</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Segment</th>
+                  <th>Customers</th>
+                  <th>Avg. spend</th>
+                </tr>
+                <tr>
+                  <td>VIP</td>
+                  <td>86</td>
+                  <td>$3,420</td>
+                </tr>
+                <tr>
+                  <td>Returning</td>
+                  <td>2,310</td>
+                  <td>$780</td>
+                </tr>
+                <tr>
+                  <td>New</td>
+                  <td>124</td>
+                  <td>$210</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="p-Support" class="panel">
+          <h1>Support</h1>
+          <div class="card">
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Ticket</th>
+                  <th>Issue</th>
+                  <th>Customer</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>#88</td>
+                  <td>Keyboard RGB flicker</td>
+                  <td>Ashish K.</td>
+                  <td>Open</td>
+                </tr>
+                <tr>
+                  <td>#85</td>
+                  <td>Laptop battery drain</td>
+                  <td>Meera S.</td>
+                  <td>In progress</td>
+                </tr>
+                <tr>
+                  <td>#71</td>
+                  <td>Monitor dead pixel</td>
+                  <td>Rohan D.</td>
+                  <td>Closed</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="kpi">
+            <div>
+              <p>Avg. response</p>
+              <b>2.4 h</b>
+            </div>
+            <div>
+              <p>Satisfaction</p>
+              <b>96%</b>
+            </div>
+            <div>
+              <p>Open tickets</p>
+              <b>7</b>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Ticket categories</h3>
+              <div class="donutwrap">
+                <div class="donut" style="background:conic-gradient(#3fb8a0 0% 41%,#1f5f99 41% 70%,#f59e0b 70% 88%,#e5484d 88% 100%)" role="img" aria-label="Breakdown chart">
+                </div>
+                <ul class="legend">
+                  <li><i style="background:#3fb8a0"></i>Hardware<b>41%</b></li>
+                  <li><i style="background:#1f5f99"></i>Orders<b>29%</b></li>
+                  <li><i style="background:#f59e0b"></i>Software<b>18%</b></li>
+                  <li><i style="background:#e5484d"></i>Other<b>12%</b></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Support activity</h3>
+              <ul class="feed">
+                <li>
+                  <b>Ticket #88 opened</b>
+                  <time>1 h ago</time>
+                  <span>Keyboard RGB flicker</span>
+                </li>
+                <li>
+                  <b>Ticket #85 updated</b>
+                  <time>3 h ago</time>
+                  <span>Technician assigned</span>
+                </li>
+                <li>
+                  <b>Ticket #71 closed</b>
+                  <time>Yesterday</time>
+                  <span>Resolved, 5 stars</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Knowledge base</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Article</th>
+                  <th>Views</th>
+                  <th>Helpful</th>
+                </tr>
+                <tr>
+                  <td>Choosing a power supply</td>
+                  <td>1,240</td>
+                  <td>92%</td>
+                </tr>
+                <tr>
+                  <td>Fixing boot loops</td>
+                  <td>980</td>
+                  <td>88%</td>
+                </tr>
+                <tr>
+                  <td>Upgrading RAM safely</td>
+                  <td>760</td>
+                  <td>95%</td>
+                </tr>
+                <tr>
+                  <td>Warranty claim guide</td>
+                  <td>640</td>
+                  <td>90%</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Team workload</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Technician</th>
+                  <th>Open</th>
+                  <th>Resolved this week</th>
+                </tr>
+                <tr>
+                  <td>Priya N.</td>
+                  <td>3</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>Arjun R.</td>
+                  <td>2</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>Neha S.</td>
+                  <td>2</td>
+                  <td>9</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="p-Analytics" class="panel">
+          <h1>Analytics</h1>
+          <div class="kpi">
+            <div>
+              <p>Conversion</p>
+              <b><span data-n="38">0</span>‰</b>
+            </div>
+            <div>
+              <p>Avg. order</p>
+              <b>$<span data-n="412">0</span></b>
+            </div>
+            <div>
+              <p>Returning</p>
+              <b><span data-n="41">0</span>%</b>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Revenue trend</h3>
+              <svg class="area" viewBox="0 0 400 160" role="img" aria-label="Sales trend">
+                <defs>
+                  <linearGradient id="ar" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#3fb8a0" stop-opacity=".5"/>
+                    <stop offset="1" stop-color="#3fb8a0" stop-opacity="0"/>
+                  </lineargradient>
+                </defs>
+                <path d="M0 120L60 90L120 100L180 60L240 70L300 30L360 45L400 15V160H0Z" fill="url(#ar)"/>
+                <path d="M0 120L60 90L120 100L180 60L240 70L300 30L360 45L400 15" fill="none" stroke="#1f5f99" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="card">
+              <h3>Sales by category</h3>
+              <div class="li">
+                <div class="g">
+                  <b>Gaming PCs</b>
+                  <div class="prog"><i style="width:82%;"></i></div>
+                </div>
+                <span>82%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Components</b>
+                  <div class="prog"><i style="width:64%;"></i></div>
+                </div>
+                <span>64%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Laptops</b>
+                  <div class="prog"><i style="width:55%;"></i></div>
+                </div>
+                <span>55%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Peripherals</b>
+                  <div class="prog"><i style="width:38%;"></i></div>
+                </div>
+                <span>38%</span>
+              </div>
+            </div>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Traffic sources</h3>
+              <div class="li">
+                <div class="g">
+                  <b>Search</b>
+                  <div class="prog"><i style="width:46%;"></i></div>
+                </div>
+                <span>46%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Direct</b>
+                  <div class="prog"><i style="width:27%;"></i></div>
+                </div>
+                <span>27%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Social</b>
+                  <div class="prog"><i style="width:17%;"></i></div>
+                </div>
+                <span>17%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Email</b>
+                  <div class="prog"><i style="width:10%;"></i></div>
+                </div>
+                <span>10%</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Conversion funnel</h3>
+              <div class="li">
+                <div class="g">
+                  <b>Visited store</b>
+                  <div class="prog"><i style="width:100%;"></i></div>
+                </div>
+                <span>100%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Viewed product</b>
+                  <div class="prog"><i style="width:64%;"></i></div>
+                </div>
+                <span>64%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Added to cart</b>
+                  <div class="prog"><i style="width:23%;"></i></div>
+                </div>
+                <span>23%</span>
+              </div>
+              <div class="li">
+                <div class="g">
+                  <b>Purchased</b>
+                  <div class="prog"><i style="width:9%;"></i></div>
+                </div>
+                <span>9%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Top pages</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Page</th>
+                  <th>Views</th>
+                  <th>Avg. time</th>
+                </tr>
+                <tr>
+                  <td>Home</td>
+                  <td>18,420</td>
+                  <td>1m 42s</td>
+                </tr>
+                <tr>
+                  <td>Services</td>
+                  <td>9,310</td>
+                  <td>2m 05s</td>
+                </tr>
+                <tr>
+                  <td>Blog</td>
+                  <td>6,880</td>
+                  <td>3m 12s</td>
+                </tr>
+                <tr>
+                  <td>Contact</td>
+                  <td>3,120</td>
+                  <td>1m 10s</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Device split</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Device</th>
+                  <th>Visits</th>
+                  <th>Share</th>
+                </tr>
+                <tr>
+                  <td>Desktop</td>
+                  <td>12,400</td>
+                  <td>52%</td>
+                </tr>
+                <tr>
+                  <td>Mobile</td>
+                  <td>9,800</td>
+                  <td>41%</td>
+                </tr>
+                <tr>
+                  <td>Tablet</td>
+                  <td>1,700</td>
+                  <td>7%</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="p-Settings" class="panel">
+          <h1>Settings</h1>
+          <div class="card">
+            <h3>Store settings (demo)</h3>
+            <form data-validate novalidate>
+              <div class="field">
+                <label for="se">Store email</label>
+                <input id="se" name="se" type="text" data-v="email" autocomplete="off">
+                <small class="err" role="alert"></small>
+              </div>
+              <button class="btn" type="submit">Save changes</button>
+            </form>
+          </div>
+          <div class="cols2">
+            <div class="card">
+              <h3>Notifications</h3>
+              <label class="tgl">New order alerts<input type="checkbox" checked></label>
+              <label class="tgl">Low stock alerts<input type="checkbox" checked></label>
+              <label class="tgl">Weekly sales report<input type="checkbox"></label>
+              <label class="tgl">Customer messages<input type="checkbox" checked></label>
+            </div>
+            <div class="card">
+              <h3>Store hours</h3>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                  </tr>
+                  <tr>
+                    <td>Mon – Fri</td>
+                    <td>10:00 – 20:00</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>10:00 – 18:00</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Payment methods</h3>
+            <label class="tgl">Cards<input type="checkbox" checked></label>
+            <label class="tgl">UPI<input type="checkbox" checked></label>
+            <label class="tgl">Net banking<input type="checkbox" checked></label>
+            <label class="tgl">Cash on delivery<input type="checkbox"></label>
+          </div>
+          <div class="card">
+            <h3>Team members</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Last active</th>
+                </tr>
+                <tr>
+                  <td>Kabir Shah</td>
+                  <td>Owner</td>
+                  <td>Today</td>
+                </tr>
+                <tr>
+                  <td>Neha Sharma</td>
+                  <td>Manager</td>
+                  <td>Today</td>
+                </tr>
+                <tr>
+                  <td>Arjun Rao</td>
+                  <td>Technician</td>
+                  <td>Yesterday</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Security</h3>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Item</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>Two-step login</td>
+                  <td>On</td>
+                </tr>
+                <tr>
+                  <td>Last backup</td>
+                  <td>Sep 26, 02:00</td>
+                </tr>
+                <tr>
+                  <td>API access</td>
+                  <td>Disabled</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
