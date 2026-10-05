@@ -28,12 +28,10 @@ function start(){
  const hs=$('.hs .in');
  if(hs)ScrollTrigger.matchMedia({'(min-width:821px)':()=>{gsap.to(hs,{x:()=>-(hs.scrollWidth-innerWidth),ease:'none',scrollTrigger:{trigger:'.hs',pin:true,scrub:1,end:()=>'+='+(hs.scrollWidth-innerWidth),invalidateOnRefresh:true}})}});
  const vis=$('.vis');
- $$('.step').forEach(s=>ScrollTrigger.create({trigger:s,start:'top 55%',end:'bottom 55%',onToggle:x=>{if(x.isActive&&vis){vis.style.setProperty('--h',s.dataset.h);vis.innerHTML='<img src="'+(s.dataset.img||'assets/images/'+s.dataset.i+'.svg')+'" data-fb="assets/images/'+s.dataset.i+'.svg" alt=""><small>'+s.dataset.s+'</small>';gsap.fromTo(vis,{scale:.95},{scale:1,duration:.6,ease:'back.out(2)'})}}}));
+ $$('.step').forEach(s=>ScrollTrigger.create({trigger:s,start:'top 55%',end:'bottom 55%',onToggle:x=>{if(x.isActive&&vis){vis.style.setProperty('--h',s.dataset.h);vis.innerHTML='<img src="'+(s.dataset.img||'assets/images/'+s.dataset.i+'.webp')+'" data-fb="assets/images/'+s.dataset.i+'.webp" alt=""><small>'+s.dataset.s+'</small>';gsap.fromTo(vis,{scale:.95},{scale:1,duration:.6,ease:'back.out(2)'})}}}));
  $$('.tilt').forEach(c=>{c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();gsap.to(c,{rotateY:((e.clientX-r.left)/r.width-.5)*8,rotateX:-((e.clientY-r.top)/r.height-.5)*8,transformPerspective:800,duration:.4})});c.addEventListener('pointerleave',()=>gsap.to(c,{rotateX:0,rotateY:0,duration:.6}))});
  $$('.mag').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.25,y:(e.clientY-r.top-r.height/2)*.25,duration:.3})});b.addEventListener('pointerleave',()=>gsap.to(b,{x:0,y:0,duration:.5,ease:'elastic.out(1,.5)'}))});
 }
-if(L){gsap.timeline({onComplete:()=>{L.remove();start()}})
- .from('#loader div',{scale:0,rotation:-12,opacity:0,stagger:.08,duration:.6,ease:'back.out(1.7)'})
- .to('#loader div',{y:-30,opacity:0,stagger:.05,duration:.5,delay:.4})}
+if(L)L.addEventListener('animationend',e=>{if(e.animationName==='loader-exit'){L.remove();start()}});
 else start();
 })();

@@ -8,7 +8,8 @@ $$('#menu a').forEach(a=>{if(a.getAttribute('href')===cur)a.classList.add('act')
 document.addEventListener('pointermove',e=>{const c=e.target.closest&&e.target.closest('.card');if(c){const r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')}},{passive:true});
 $$('.flip').forEach(f=>f.addEventListener('click',()=>f.classList.toggle('on')));
 $$('.exp').forEach(c=>{const t=()=>c.setAttribute('aria-expanded',c.classList.toggle('open'));c.addEventListener('click',t);c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();t()}})});
-$$('[data-cart]').forEach(b=>b.addEventListener('click',()=>{b.textContent='Added ✓ (demo)'}));
+const cartTimers=new WeakMap();
+$$('[data-cart]').forEach(b=>{const label=b.textContent;b.addEventListener('click',()=>{clearTimeout(cartTimers.get(b));b.textContent='Added ✓ (demo)';cartTimers.set(b,setTimeout(()=>{b.textContent=label;cartTimers.delete(b)},2000))})});
 $$('img[data-fb]').forEach(i=>{if(i.complete&&!i.naturalWidth){i.dataset.done=1;i.src=i.dataset.fb}});
 document.addEventListener('error',e=>{const t=e.target;if(t.tagName==='IMG'&&t.dataset.fb&&!t.dataset.done){t.dataset.done=1;t.src=t.dataset.fb}},true);
 })();
