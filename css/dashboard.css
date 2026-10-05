@@ -29,6 +29,27 @@ body.d{background:#eef2ff}
 .orders-table--customer th:nth-child(3),.orders-table--customer td:nth-child(3){width:15%}
 .orders-table--customer th:nth-child(4),.orders-table--customer td:nth-child(4){width:19%}
 .orders-table--customer th:nth-child(5),.orders-table--customer td:nth-child(5){width:15%}
+@media(max-width:820px){
+ .products-table,.warranty-list-scroll,.warranty-table{max-width:100%;overscroll-behavior-x:contain}
+ .tw.products-table table{min-width:760px;table-layout:fixed}
+ .products-table th:nth-child(1),.products-table td:nth-child(1){width:38%}
+ .products-table th:nth-child(2),.products-table td:nth-child(2){width:22%}
+ .products-table th:nth-child(3),.products-table td:nth-child(3){width:14%}
+ .products-table th:nth-child(4),.products-table td:nth-child(4){width:10%}
+ .products-table th:nth-child(5),.products-table td:nth-child(5){width:16%}
+ .tw.products-table--recent table{min-width:520px}
+ .products-table--recent th:nth-child(1),.products-table--recent td:nth-child(1){width:50%}
+ .products-table--recent th:nth-child(2),.products-table--recent td:nth-child(2){width:24%}
+ .products-table--recent th:nth-child(3),.products-table--recent td:nth-child(3){width:26%}
+ .warranty-list-scroll,.warranty-table,.warranty-track-scroll,.warranty-options-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+ .warranty-list{min-width:500px}
+ .tw.warranty-table table{min-width:520px;table-layout:fixed}
+ .warranty-table th:nth-child(1),.warranty-table td:nth-child(1){width:54%}
+ .warranty-table th:nth-child(2),.warranty-table td:nth-child(2){width:23%}
+ .warranty-table th:nth-child(3),.warranty-table td:nth-child(3){width:23%}
+ .warranty-track{min-width:520px}
+ .warranty-options{min-width:440px}
+}
 .sbt{display:none;margin-bottom:12px}
 @media(max-width:820px){.dash{grid-template-columns:1fr}.cols2{grid-template-columns:1fr}
  #side{position:fixed;left:0;top:64px;width:240px;z-index:40;translate:-105% 0;transition:.3s;box-shadow:8px 0 30px rgba(15,27,61,.2)}#side.open{translate:0}.sbt{display:inline-block}}
